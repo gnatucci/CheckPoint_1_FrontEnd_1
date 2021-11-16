@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Digital House">
+    <meta name="creator" content="Guilherme Prestes Natucci">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Município de Castro - História">
+    <meta property="og:description" content="Site com informações sobre a história de Castro e suas localidades turísticas">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Prefeitura do município de Castro">
+    <meta property="og:image" content="https://www.google.com/search?q=imagem+de+castro+pr&sxsrf=AOaemvJIyOEI0dHoIyvYOcGf8s549TiGfg:1637023113555&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiKhLCp0pv0AhV4qpUCHYC_C0MQ_AUoAXoECAIQAw&biw=1920&bih=937&dpr=1#imgrc=FoG5irKoYil-iM">
+    <link href="../image/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Município de Castro - História</title>
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    height: auto;
+    max-width: auto;
+    position: relative;
+    background-image: url("../image/castrolanda2.jpg");
+    background-repeat: no-repeat;
+    background-size: 2300px 1500px;
+   }
+
+/*-------------------------- Cabeçalho ------------------------------*/
+header {
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    background-color: rgba(34, 139, 34, 0.801);
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 0px 0px 15px black;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+}
+
+.container {
+    top: -22px;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: auto;
+}
+
+h1 {
+    padding-left: 10px;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+a {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: 'Fauna One', serif;   
+}
+
+div {
+    display: flex;
+}
+
+section {
+     width: 120px;
+     height: 120px;
+ }
+
+
+div.button1 {
+    border-radius: 100px;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(56, 161, 153);
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+div.button2 {
+    border-radius: 100px;
+    height: 40px;
+    width: 110px;
+    background-color: rgb(56, 161, 153);
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 16px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+div.button1:hover {
+    border: 1px solid white;
+    background-color: rgba(34, 139, 34, 0.801);
+    transition: background .6s;
+}
+
+div.button2:hover {
+    border: 1px solid white;
+    background-color: rgba(34, 139, 34, 0.801);
+    transition: background .6s;
+}
+
+.titulo {
+    position: absolute;
+     margin: 30px;
+     margin-top: 50px;
+     padding: 10px;
+     top: 0px;
+     left: 10px;
+     background-color: lightgray;
+     border-radius: 15px;
+     box-shadow: 8px 5px 20px rgb(0, 0, 0);
+     z-index: 2;
+}
+
+ .boxhistoria{
+     height: 1240px;
+     width: auto;
+     margin: 50px;
+     background-color: rgba(211, 211, 211, 0.726);
+     padding: 20px;
+     padding-left: 60px;
+     padding-right: 60px;
+     display: grid;
+     align-content: stretch;
+     position: relative;
+     top: 140px;
+     border-radius: 50px;
+     z-index: 4;
+}
+
+.containerhistoria {
+    width: auto;
+    height: auto;
+    position: relative;
+    float: left;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.box1 {
+    position: relative;
+    width: auto;
+    height: 400px;
+
+}
+
+.box2 {
+    position: relative;
+    width: auto;
+    height: 400px;
+    margin-top: 20px;
+    font-family: 'Fauna One', serif;
+    text-align: center;
+
+}
+
+.box3 {
+    margin: 50px;
+    margin-top: -80px;
+    padding: 30px;
+    position: relative;
+    width: auto;
+    height: 400px;
+    right: 0;
+    font-family: 'Fauna One', serif;
+}
+
+.ultimo {
+    height: 230px;
+    width: auto;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Fauna One', serif;
+}
+
+ article {
+     width: 50%;
+     height: 200px;
+     text-align: center;
+     margin: 50px;
+     padding: 20px;
+     position: absolute;
+     right: 39%
+    }
+
+.historia1 {
+     width: auto;
+     height: 280px;
+     text-align: center;
+     margin: 50px;
+     padding: 20px;
+     position: relative;
+     right: 0;
+     bottom: 0;
+     padding-right: 80px;
+     font-family: 'Fauna One', serif;
+    }
+     
+ 
+
+ section.imghistoria {
+     width: 500px;
+     height: 350px;
+     padding: 20px;
+     position: absolute;
+     left: 65%;
+ }
+
+ img.img-responsive {
+     height: 300px;
+     width: 500px;
+     border-radius: 100px;
+     margin-top: 20px;
+ }
+
+/*------------------------------------- Footer -------------------------------------*/
+.footer {
+    margin-top: 150px;
+    border-top: 3px solid lightgreen;
+    background-color: rgb(209, 203, 203);
+    width: auto;
+    height: 180px;
+    padding: 20px;
+    padding-left: 20px;
+    justify-content: space-between;
+    border-bottom: 150px solid rgb(209, 203, 203);
+}
+
+.footerlinks1 {
+    position: absolute;
+    margin: 50px;
+    padding: 10px;
+    right: 7%;
+} 
+
+.footerlinks2 {
+    position: absolute;
+    margin: 50px;
+    padding: 10px;
+    right: 1%;
+}
+
+.brasaologo {
+    margin: 10px;
+}
+
+#info {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: 320px;
+    bottom: 20px;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+p.infos {
+    font-size: 1rem;
+    line-height: 1.3;
+    font-family: 'Playfair Display', serif;
+}
+
+img.logo {
+    width: 48px;
+    height: 48px;
+}
+
+img.brasao {
+    width: 130px;
+    height: 120px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="button1">
+                <a href="../index.html">Vídeo</a>
+            </div>
+            <h1>CASTRO - PR</h1>
+            <div class="button2">
+                <a href="../historia/index.html">História</a>
+            </div>
+        </div>
+    </header>
+    <div class="titulo">
+        <h1>Castro - Paraná</h1>
+    </div>
+    <div class="boxhistoria">
+        <section class="containerhistoria">
+            <section class="box1">
+                <article class='historia'>
+                    <p>Considerada a “Cidade Mãe do Paraná”, Castro foi o primeiro município instituído na Província do Estado, em 1857. Alguns anos depois, em 1894, tornou-se a Capital paranaense por três meses, durante a Revolução Federalista. Desde então, coleciona títulos, como o de maior produtor de calcário agrícola da América Latina e de Capital Nacional do Leite. Sua fundação ocorreu em 1778 e fez parte do caminho dos tropeiros que iam de Viamão até Sorocaba, tendo forte origem no tropeirismo.</p>
+                </article>
+                <section class='imghistoria'>
+                    <img class="img-responsive" src="../image/capaoalto.jpg" alt="Município de Castro Paraná">
+                </section>
+            </section>
+            <section class="box2">
+                    <article class='historia'>
+                        <p>Marcada pelo tropeirismo e pela imigração europeia, especialmente holandesa, a cidade é rica em história e cultura. Os museus do Tropeiro e do Imigrante, o Complexo Histórico Cultural Judith Carneiro de Mello, a Casa da Praça e o Centro Cultural da Castrolanda são excelentes opções para quem quer conhecer mais do passado local.</p>
+                    </article>
+                    <section class='imghistoria'>
+                        <img class="img-responsive" src="../image/tropeiros.jpg" alt="Rota dos Tropeiros em Castro Paraná">
+                    </section>
+            </section>
+            <section class="box3">
+                <article class='historia1'>
+                    <p class="ultimo">Alguns pontos turísticos de castro seriam: Paróquia Sant’Ana, Museu do Tropeiro, Colônia de Castrolanda, Casa da Cultura Emília Erichsen, 
+                        Morro do Cristo, Morro do Cristo, Saltos, Prainha - Parque Balneário Dr. Libânio Estanislau Cardoso, Fazenda Capão Alto, Fazenda Potreiro Grande,Sítio Santa Olívia.
+                    </p>
+                </article>
+            </section>
+                
+        </section>
+    </div>
+    <div class="footer">
+        <div class="brasaologo">
+            <section><img class="brasao" src="../image/castro-parana-logo.png" alt="Brasão do município de Castro"></section>
+        </div>
+        <footer id="info">
+            <h2>MUNICÍPIO DE CASTRO</h2>
+            <p class="infos">PRAÇA PEDRO KALED, Nº 22, CENTRO - Castro/PR</p> 
+            <p class="infos">PRÉDIO PÚBLICO, CEP: 84.165-540</p> 
+            <p class="infos">Email: falecom@castro.pr.gov.br</p> 
+            <p class="infos">Tel/Fax: (42)2122-5000</p> 
+        </footer>
+        <div>
+            <section class="footerlinks1">
+                <a class="link" href="https://www.instagram.com/prefeituracastro/" target="_blank"> <img class="logo" src="../image/instagram.png" alt="Logo do Instagram para rede social"></a>
+            </section>
+        </div>
+        <div>
+            <section class="footerlinks2">
+                    <a class="link" href="https://www.facebook.com/PrefeituraCastro" target="_blank"><img class="logo" src="../image/facebook.png" alt="Logo do Facebook para rede social"></a>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
